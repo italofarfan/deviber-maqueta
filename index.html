@@ -23,29 +23,68 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
+			var top_menu_height = 0;
+			
 			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
+				$('#back_to_top').click(function(e){
+            		e.preventDefault();
+            		scrollTo('#top');
+        		});
+				
+				$('#logo').click(function(e){
+            		e.preventDefault();
+            		scrollTo('#top');
+        		});
+        		
+        		$('#servicios').click(function(e){
+            		e.preventDefault();
+            		scrollTo('#ideas');
+        		});
+        		
+        		$('#boton1').click(function(e){
+            		e.preventDefault();
+            		scrollTo('#formulario');
+        		});
+        		
+        		$('#boton2').click(function(e){
+            		e.preventDefault();
+            		scrollTo('#formulario');
+        		});
+        		
+        		$('#boton3').click(function(e){
+            		e.preventDefault();
+            		scrollTo('#formulario');
+        		});
 			});
+			
+			// scroll animation 
+			function scrollTo(selectors)
+			{
+
+    			if(!$(selectors).size()) return;
+    			var selector_top = $(selectors).offset().top - top_menu_height;
+    			$('html,body').animate({ scrollTop: selector_top }, 'slow');
+
+			}
 		</script>
 
 <!--start-smoth-scrolling-->
 </head>
-<body>
-<!--start-banner-->
-	<div class="banner" id="home">
-			<div class="header">
+<body id="top">
+	<!--start-header-->
+	<div class="header">
+			<div class="barra-superior" id="home">
+				<div class="email-barra-superior">hola@deviber.com</div>
+			</div>
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""></a>
+				<a href="#" id="logo"><img src="images/logo.png" alt=""></a>
 			</div>
 			<div class="navigation">
 				 <span class="menu"></span> 
 					<ul class="navig">
 						<!-- Cambiando menu - Italo -->
 						<!-- <li><a href="index.html" class="active">HOME</a></li><span><img src="images/clk.png" alt="" /></span> -->
-						<li><a href="about-us.html">SERVICIOS</a></li><span><img src="images/clk.png" alt="" /></span>
+						<li><a href="#" id="servicios">SERVICIOS</a></li><span><img src="images/clk.png" alt="" /></span>
 						<li><a href="services.html">PORTAFOLIO</a></li><span><img src="images/clk.png" alt="" /></span>
 						<li><a href="404.html">NOSOTROS</a></li><span><img src="images/clk.png" alt="" /></span>
 						<li><a href="carrers.html">BLOG</a></li><span><img src="images/clk.png" alt="" /></span>
@@ -53,6 +92,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 			</div>
 				<div class="clearfix"></div>
+			</div>
+			<!--start-banner-->
+			<div class="banner">
+			<div class="hueco-cabecera">
 			</div>
 			<div class="banner-main">
 				<div class="container">	
@@ -122,6 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!--End-slider-script-->		
 	<!--end-banner-->
 	<!--start-idea-->
+	<div id="ideas"></div>
 	<div class="idea">
 		<div class="container">
 			<div class="idea-main">
@@ -134,7 +178,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nibh et neque faucibus suscipit. Sed auctor ipsum ut tellus faucibus tincidunt. Curabitur non quam facilisis, rhoncus ligula ac, pellentesque augue ipsum.</p>
 						<div class="i-btn">
 							<!-- Italo - cambiar el enlace services.html, enviar al apartado contacto -->
-							<a href="services.html">EMPECEMOS</a>
+							<a href="#" id="boton1">EMPECEMOS</a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -145,7 +189,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nibh et neque faucibus suscipit. Sed auctor ipsum ut tellus faucibus tincidunt. Curabitur non quam facilisis, rhoncus ligula ac, pellentesque augue ipsum.</p>
 						<div class="i-btn">
 							<!-- Italo - cambiar el enlace services.html, enviar al apartado contacto -->
-							<a href="services.html">DEJANOS AYUDARTE</a>
+							<a href="#" id="boton2">DEJANOS AYUDARTE</a>
 						</div>
 					</div>
 					<div class="col-md-5 idea-left id-one-right">
@@ -166,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nibh et neque faucibus suscipit. Sed auctor ipsum ut tellus faucibus tincidunt. Curabitur non quam facilisis, rhoncus ligula ac, pellentesque augue ipsum.</p>
 						<div class="i-btn">
 						<!-- Italo - cambiar el enlace services.html, enviar al apartado contacto -->
-							<a href="services.html">CONTACTANOS</a>
+							<a href="#" id="boton3">CONTACTANOS</a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -243,30 +287,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="clearfix"></div>
 							</div>
-							<div class="part-one">
-								<div class="col-md-4 partner-left">
-									<img src="images/prt-4.png" alt="" />
-									<div class="part">
-										<p>“Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Nunc sollicitudin a risus vel molestie. Nullam vitae sollicitudin eros. Cras eu venenatis sapien.”</p>
-										<label>Adrian - Hover Agency</label>
-									</div>
-								</div>
-								<div class="col-md-4 partner-left">
-									<img src="images/prt-5.png" alt="" />
-									<div class="part">
-										<p>“Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Nunc sollicitudin a risus vel molestie. Nullam vitae sollicitudin eros. Cras eu venenatis sapien.”</p>
-										<label>Adrian - Hover Agency</label>
-									</div>
-								</div>
-								<div class="col-md-4 partner-left">
-									<img src="images/prt-6.png" alt="" />
-									<div class="part">
-										<p>“Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Nunc sollicitudin a risus vel molestie. Nullam vitae sollicitudin eros. Cras eu venenatis sapien.”</p>
-										<label>Adrian - Hover Agency</label>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
 						</li>
 						<li>
 							<div class="part-one">
@@ -286,30 +306,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="col-md-4 partner-left">
 									<img src="images/prt-1.png" alt="" />
-									<div class="part">
-										<p>“Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Nunc sollicitudin a risus vel molestie. Nullam vitae sollicitudin eros. Cras eu venenatis sapien.”</p>
-										<label>Adrian - Hover Agency</label>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="part-one">
-								<div class="col-md-4 partner-left">
-									<img src="images/prt-5.png" alt="" />
-									<div class="part">
-										<p>“Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Nunc sollicitudin a risus vel molestie. Nullam vitae sollicitudin eros. Cras eu venenatis sapien.”</p>
-										<label>Adrian - Hover Agency</label>
-									</div>
-								</div>
-								<div class="col-md-4 partner-left">
-									<img src="images/prt-6.png" alt="" />
-									<div class="part">
-										<p>“Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Nunc sollicitudin a risus vel molestie. Nullam vitae sollicitudin eros. Cras eu venenatis sapien.”</p>
-										<label>Adrian - Hover Agency</label>
-									</div>
-								</div>
-								<div class="col-md-4 partner-left">
-									<img src="images/prt-4.png" alt="" />
 									<div class="part">
 										<p>“Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Nunc sollicitudin a risus vel molestie. Nullam vitae sollicitudin eros. Cras eu venenatis sapien.”</p>
 										<label>Adrian - Hover Agency</label>
@@ -386,28 +382,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							     <img src="images/port-3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web</h2>
 							  	 </div></a>
 			                </div>
-						</div>				
-						<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">		
-								<a href="images/p-4.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
-							     <img src="images/port-4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web</h2>
-							  	 </div></a>
-			                </div>
-						</div>	
-						<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">		
-								<a href="images/p-5.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
-							     <img src="images/port-5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web </h2>
-							  	 </div></a>
-			                </div> 
-						</div>			
-						<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">		
-								<a href="images/p-1.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
-							     <img src="images/port-1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web</h2>
-							  	 </div></a>
-			                </div>
-			            </div>		
+						</div>						
 					</div>
 				</div>
 			   </div>
@@ -470,6 +445,7 @@ $(function () {
 
 <!-- Italo agregando formulario -->
 <!--start-banner-->
+<div id="formulario"></div>
 	<div class="stop">
 		<div class="container">
 			<div class="stop-top">
@@ -540,7 +516,7 @@ $(function () {
 						<p>Template by <a href="http://w3layouts.com/"> W3layouts</a></p>
 					</div>
 					<div class="col-md-4 footer-right">
-						<p><a href="#home" class="scroll">TO THE TOP</a></p>
+						<p><a href="#" class="scroll" id="back_to_top">TO THE TOP</a></p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
