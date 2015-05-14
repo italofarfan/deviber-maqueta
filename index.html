@@ -15,6 +15,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/style-deviber.css" rel='stylesheet' type='text/css' />
 <script src="js/jquery-1.11.0.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -39,6 +40,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         		$('#servicios').click(function(e){
             		e.preventDefault();
             		scrollTo('#ideas');
+        		});
+
+        		$('#portafolio').click(function(e){
+            		e.preventDefault();
+            		scrollTo('#proyectos');
+        		});
+
+        		$('#nosotros').click(function(e){
+            		e.preventDefault();
+            		scrollTo('#sobre-nosotros');
         		});
         		
         		$('#boton1').click(function(e){
@@ -85,10 +96,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!-- Cambiando menu - Italo -->
 						<!-- <li><a href="index.html" class="active">HOME</a></li><span><img src="images/clk.png" alt="" /></span> -->
 						<li><a href="#" id="servicios">SERVICIOS</a></li><span><img src="images/clk.png" alt="" /></span>
-						<li><a href="services.html">PORTAFOLIO</a></li><span><img src="images/clk.png" alt="" /></span>
-						<li><a href="404.html">NOSOTROS</a></li><span><img src="images/clk.png" alt="" /></span>
+						<li><a href="#" id="portafolio">PORTAFOLIO</a></li><span><img src="images/clk.png" alt="" /></span>
+						<li><a href="#" id="nosotros">NOSOTROS</a></li><span><img src="images/clk.png" alt="" /></span>
 						<li><a href="carrers.html">BLOG</a></li><span><img src="images/clk.png" alt="" /></span>
-						<li><a href="contact.html">CONTACTO</a></li>
+						<li><a href="#" id="formulario">CONTACTO</a></li>
 					</ul>
 			</div>
 				<div class="clearfix"></div>
@@ -100,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="banner-main">
 				<div class="container">	
 					<div class="banner-top">
-						<h1>TOP-NOTCH WEB SERVICES IN ONE PLACE</h1>
+						<h1>SERVICIOS WEB Y ERP EN UN SOLO LUGAR</h1>
 						<div class="banner-top-btm">
 							<div class="col-md-6 bnr-left">
 								<img src="images/icn-1.png" alt="" />
@@ -174,22 +185,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<img src="images/idea-1.png" alt="" />
 					</div>
 					<div class="col-md-7 idea-right id-right">
-						<h3>WE HAVE IDEAS FOR EVERYONE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nibh et neque faucibus suscipit. Sed auctor ipsum ut tellus faucibus tincidunt. Curabitur non quam facilisis, rhoncus ligula ac, pellentesque augue ipsum.</p>
+						<h3><DIV>WEB</DIV></h3>
+						<p>Desarrollamos webs para que su empresa gane más dinero. Nuestra <b>asesoría gratuita</b> nos permitirá brindarle un producto acorde a sus necesidades, teniendo en cuenta factores como usabilidad, accesibilidad, optimización y objetivos de su negocio. Somos  ingenieros web, programadores y profesionales creativos con un solo objetivo: ayudarle.</p>
 						<div class="i-btn">
 							<!-- Italo - cambiar el enlace services.html, enviar al apartado contacto -->
-							<a href="#" id="boton1">EMPECEMOS</a>
+							<a href="#" id="boton1">CONTACTENOS</a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="idea-top">
 					<div class="col-md-7 idea-right id-one-left">
-						<h3>WE HAVE IDEAS FOR EVERYONE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nibh et neque faucibus suscipit. Sed auctor ipsum ut tellus faucibus tincidunt. Curabitur non quam facilisis, rhoncus ligula ac, pellentesque augue ipsum.</p>
+						<h3>TIENDA ONLINE</h3>
+						<p>Desarrollamos tiendas online fácilmente gestionables. Sus clientes podrán acceder a su tienda desde teléfonos inteligentes, tabletas, ordenadores y usted podrá estar seguro de que su sitio se verá impecable en cualquier momento y desde cualquier lugar. Nuestras tiendas online le aportarán felixibilidad y escalabilidad a precios que se sorprenderá.</p>
 						<div class="i-btn">
 							<!-- Italo - cambiar el enlace services.html, enviar al apartado contacto -->
-							<a href="#" id="boton2">DEJANOS AYUDARTE</a>
+							<a href="#" id="boton2">EMPECEMOS</a>
 						</div>
 					</div>
 					<div class="col-md-5 idea-left id-one-right">
@@ -206,11 +217,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<img src="images/idea-1.png" alt="" />
 					</div>
 					<div class="col-md-7 idea-right id-right">
-						<h3>WE HAVE IDEAS FOR EVERYONE</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nibh et neque faucibus suscipit. Sed auctor ipsum ut tellus faucibus tincidunt. Curabitur non quam facilisis, rhoncus ligula ac, pellentesque augue ipsum.</p>
+						<h3>SISTEMAS DE GESTIÓN EMPRESARIAL</h3>
+						<p>Implantamos Odoo, un completo sistema de gestión empresarial (ERP) de código abierto y sin coste de licencias que cubre las necesidades de las áreas de: Contabilidad y Finanzas, Ventas, RRHH, Compras, Proyectos, Almacenes (SGA), CRM y Fabricación entre otras. Ahorre en licencias y liberese. Nada es más perjudicial para su empresa que estar atado a un único proveedor</p>
 						<div class="i-btn">
 						<!-- Italo - cambiar el enlace services.html, enviar al apartado contacto -->
-							<a href="#" id="boton3">CONTACTANOS</a>
+							<a href="#" id="boton3">ESCRIBANOS</a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -252,7 +263,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!--end-number-->
 	<!--start-partner-->
-	<div class="partner">
+	<!-- <div id="clients"></div> -->
+	<div id="clients" class="partner">
 		<div class="container">
 			<div class="partner-top">
 				<!-- <h3>OUR WONDERFUL PARTNERS</h3>-->
@@ -345,10 +357,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  </script>
 			<!--End-slider-script-->
 	<!--start-project-->
+	<div id="proyectos"></div>
 	<div class="project">
 		<div class="container">
 			<div class="project-top">
-				<h3>OUR AWESOME PROJECTS</h3>
+				<h3>PROYECTOS RECIENTES</h3>
 			</div>
 			<div class="project-bottom">
 				<div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="portfolio">
@@ -449,26 +462,39 @@ $(function () {
 	<div class="stop">
 		<div class="container">
 			<div class="stop-top">
-				<h3>STOP BY FOR A GOOD COFFEE</h3>
+				<h3>NOS ENCANTARÁ ESCUCHARLE</h3>
 			</div>
 			<div class="stop-bottom">
 				<div class="col-md-4 stop-left">
 					<div class="address">
-						<h4>ADDRESS</h4>
-						<p>Planeto Ltd.<span>Drayton Park 243</span>N5 1BU London</p>
+						<h4>BENEFICIOS AL CONTACTARNOS</h4>
+						<p>· Asesoría gratuíta<span>· Trato cordial y sincero</span>· Respuesta rápida</p>
 					</div>
 					<div class="email">
-						<h4>EMAIL</h4>
-						<p><a href="mailto:example@email.com">hello@planeto.com</a></p>
+						<h4>CORREO ELECTRÓNICO</h4>
+						<p><a href="mailto:hola@deviber.com">hola@deviber.com</a></p>
 					</div>
 					<div class="phone">
-						<h4>PHONE</h4>
-						<p>421.909.123.456</p>
+						<h4>SKYPE</h4>
+						<p>dev-iber</p>
 					</div>
 				</div>
 				<div class="col-md-8 stop-left">
-					<h4>SAY HELLO</h4>
+					<h4>FORMULARIO DE CONTACTO</h4>
 					<div class="stop-btm">
+						<input type="text" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}" />
+						<input type="text" value="Web" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Web';}" />
+						<input type="text" value="Correo electrónico" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Correo electrónico';}" />
+				        <input type="text" value="Teléfono" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Teléfono';}" />
+						<textarea value="Mensaje:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje';}">Mensaje</textarea>
+							<div class="s-btn">
+								<form>
+									<input type="submit" value="ENVIAR MENSAJE">
+						    	</form>
+						    </div>	
+					</div>
+					<!-- Comentado parte del formulario original -->
+<!-- 					<div class="stop-btm">
 						<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
 						<input type="text" value="Website" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Website';}" />
 						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
@@ -479,7 +505,7 @@ $(function () {
 									<input type="submit" value="SEND MESSAGE">
 						    	</form>
 						    </div>	
-					</div>
+					</div> -->
 				</div>
 				<div class="clearfix"></div>
 			</div>

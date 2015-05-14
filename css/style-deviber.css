@@ -1,0 +1,62 @@
+/* añadidos */
+
+.barra-superior {
+  	width:100%;
+  	background:#000000;
+  	color:white;
+  	margin-bottom:30px;
+}
+
+.email-barra-superior {
+	width:100%;
+	text-align:right;
+	padding: 5px 40px 5px 0;
+	font-weight:bold;	
+}
+
+@media (max-width: 768px){
+	.barra-superior {
+  		display:none;
+	}
+	
+	.email-barra-superior {
+		display:none;
+	}
+}
+
+.header {
+	position:fixed;
+  	width:100%;
+  	/*background:#4AB3CF;*/
+  	z-index:2000;
+}
+
+.header {
+  padding: 0;
+  background: rgba(65, 184, 133, 0.6);
+  z-index: 999;
+}
+
+.hueco-cabecera {
+	height:125px;
+}
+
+@media (max-width: 768px){
+	.hueco-cabecera {
+		display:none;
+	}
+}
+
+#ideas {
+	margin-bottom:20px;
+}
+
+#formulario {
+	margin-bottom:80px;
+}
+
+@media (max-width: 768px){
+	#formulario {
+		margin-bottom:10px;
+	}
+}
