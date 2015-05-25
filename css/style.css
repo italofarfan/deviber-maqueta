@@ -42,7 +42,7 @@ body a:hover{
 }
 .header {
   padding: 0;
-  background: rgba(65, 184, 133, 0.6);
+  /*background: rgba(65, 184, 133, 0.6);*/
   z-index: 999;
 }
 ul.navig {
@@ -121,7 +121,8 @@ ul.navig li a:after{
 }
 .stars:before {
 	content: "";
-	background: rgba(88, 86, 104, 0.33);
+	/*background: rgba(88, 86, 104, 0.33);*/
+	background: rgba(65, 133, 184, 0.6);
 	height: 1px;
 	width: 35%;
 	position: absolute;
@@ -130,7 +131,8 @@ ul.navig li a:after{
 }
 .stars:after {
 	content: "";
-	background: rgba(88, 86, 104, 0.33);
+	background: rgba(65, 133, 184, 0.6);
+	/*background: rgba(88, 86, 104, 0.33);*/
 	height: 1px;
 	width: 35%;
 	position: absolute;
@@ -467,7 +469,7 @@ ul.navig li:nth-of-type(3) {
 	height: 10px;
 	width: 10px;
 	display: inline-block;
-	background:#515553;
+	/*background:#515553;*/
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -636,6 +638,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 .part {
   padding: 3em 3em;
   background: #fafafa;
+  background: #79B8E8;
   text-align: left;
   position: absolute;
   top: 0;

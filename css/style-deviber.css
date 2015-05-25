@@ -2,9 +2,11 @@
 
 .barra-superior {
   	width:100%;
-  	background:#000000;
-  	color:white;
+  	background:#1571C7;
+  	/*color:white;*/
+  	color: #CCF516;
   	margin-bottom:30px;
+  	opacity: 0.8;
 }
 
 .email-barra-superior {
@@ -24,17 +26,20 @@
 	}
 }
 
+/*.header {
+	position:fixed;
+  	width:100%;
+  	background:#4AB3CF;
+  	z-index:2000;
+}*/
+
 .header {
 	position:fixed;
   	width:100%;
-  	/*background:#4AB3CF;*/
-  	z-index:2000;
-}
-
-.header {
-  padding: 0;
-  background: rgba(65, 184, 133, 0.6);
-  z-index: 999;
+  	padding: 0;
+  	/*background: rgba(65, 184, 133, 0.6);*/
+  	background: rgba(65, 133, 184, 0.9);
+  	z-index: 999;
 }
 
 .hueco-cabecera {
@@ -47,8 +52,52 @@
 	}
 }
 
+/* Banner*/
+.banner {
+  	background: url(../images/banner-2.png) no-repeat;
+  	background-size: 100% 100%;
+  	background: rgba(65, 133, 184, 0.6);
+  	-webkit-background-size: 100% 100%;
+ 	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+  	-ms-background-size: 100% 100%;
+  	min-height: 613px;
+}
+.banner1 {
+  	background: url(../images/banner-2.png) no-repeat;
+  	background-size: 100% 100%;
+  	background: rgba(65, 133, 184, 0.6);
+  	-webkit-background-size: 100% 100%;
+  	-moz-background-size: 100% 100%;
+  	-o-background-size: 100% 100%;
+  	-ms-background-size: 100% 100%;
+  	min-height: 350px;
+}
+
+/* Parnters - clientes*/
+.i-btn a:hover,.team-msg-right a:hover,.error-btn a:hover{
+	background: #3492E3;
+	/*background:#45b887;*/
+	color:#fff;
+	border: 2px solid #fff;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+
 #ideas {
 	margin-bottom:20px;
+}
+
+/* Franja números*/
+.number{
+	padding:3em 0px;
+	background: #79B8E8;
+	/*background: #308DDE;*/
+	/*background: #2D82CB;*/
+	/*background:#45b887;*/
 }
 
 #formulario {
