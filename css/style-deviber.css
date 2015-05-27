@@ -9,11 +9,36 @@
   	opacity: 0.8;
 }
 
-.email-barra-superior {
+.email-barra-superior{
 	width:100%;
 	text-align:right;
 	padding: 5px 40px 5px 0;
-	font-weight:bold;	
+	font-weight:bold;
+	color: yellow;	
+}
+
+/* Ancho del menú*/
+ul.navig {
+  padding: 0;
+  margin-top: 1.6%;
+  margin-bottom: 2.2%;
+}
+
+/* unvisited link */
+.email-barra-superior a:link {
+    color: yellow;
+}
+/* visited link */
+.email-barra-superior a:visited {
+    color: white;
+}
+/* mouse over link */
+.email-barra-superior a:hover {
+    color: white;
+}
+/* selected link */
+.email-barra-superior a:active {
+    /*color: blue;*/
 }
 
 @media (max-width: 768px){
@@ -74,30 +99,41 @@
   	min-height: 350px;
 }
 
-/* Parnters - clientes*/
+
+/* Servicios */
+#ideas {
+	margin-bottom:20px;
+}
+
+/* Fondo de botones*/
 .i-btn a:hover,.team-msg-right a:hover,.error-btn a:hover{
 	background: #3492E3;
 	/*background:#45b887;*/
-	color:#fff;
-	border: 2px solid #fff;
-	transition: 0.5s all ease;
-	-webkit-transition: 0.5s all ease;
-	-moz-transition: 0.5s all ease;
-	-o-transition: 0.5s all ease;
-	-ms-transition: 0.5s all ease;
-}
-
-#ideas {
-	margin-bottom:20px;
 }
 
 /* Franja números*/
 .number{
 	padding:3em 0px;
 	background: #79B8E8;
-	/*background: #308DDE;*/
-	/*background: #2D82CB;*/
-	/*background:#45b887;*/
+}
+
+
+
+/* Parnters*/
+.part {
+  background: #79B8E8;
+}
+
+/* Fondo - últimos trabajos*/
+.b-wrapper:hover {
+	background: rgba(121, 184, 232, 0.75);
+	/*background: rgba(69, 184, 135, 0.75);*/
+}
+
+
+/* Formulario - boton Mensaje*/
+.stop-btm input[type=submit]:hover,.tb-one input[type=submit]:hover{
+  	background: #79B8E8;
 }
 
 #formulario {
@@ -108,4 +144,16 @@
 	#formulario {
 		margin-bottom:10px;
 	}
+}
+
+/* Color boton al pasar el raton*/
+.footer-middle p a:hover,.footer-right p a:hover,
+.contact-right p a:hover,.stop-left p a:hover{
+	text-decoration:none;
+	color:#79B8E8;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }

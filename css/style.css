@@ -47,7 +47,7 @@ body a:hover{
 }
 ul.navig {
   padding: 0;
-  margin-top: 1.2%;
+  margin-top: 3.2%;
 }
 ul.navig li span {
 	color: #fff;
@@ -469,7 +469,7 @@ ul.navig li:nth-of-type(3) {
 	height: 10px;
 	width: 10px;
 	display: inline-block;
-	/*background:#515553;*/
+	background:#515553;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -519,7 +519,7 @@ ul.callbacks_tabs.callbacks2_tabs {
   background:#fff;
 }
 .i-btn a:hover,.team-msg-right a:hover,.error-btn a:hover{
-	background:#45b887;
+	/*background:#45b887;*/
 	color:#fff;
 	border: 2px solid #fff;
 	transition: 0.5s all ease;
@@ -638,7 +638,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 .part {
   padding: 3em 3em;
   background: #fafafa;
-  background: #79B8E8;
+  /*background: #79B8E8;*/
   text-align: left;
   position: absolute;
   top: 0;
@@ -772,7 +772,7 @@ ul#filters {
 	background: #FFF;
 }
 .b-wrapper:hover {
-	background: rgba(69, 184, 135, 0.75);
+	/*background: rgba(69, 184, 135, 0.75);*/
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-o-transition: 0.5s all;
@@ -1027,7 +1027,7 @@ div#portfoliolist {
 .footer-middle p a:hover,.footer-right p a:hover,
 .contact-right p a:hover,.stop-left p a:hover{
 	text-decoration:none;
-	color:#45b887;
+	/*color:#45b887;*/
 	transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
 	-moz-transition: 0.5s all ease;
@@ -1107,6 +1107,7 @@ div#portfoliolist {
   	margin: 4px 0;
   	font-size:13px;
   	color: #474747;
+  	color: black;
   	resize: none;
   	background: #f3f3f3;
   	height: 150px;
@@ -1139,7 +1140,7 @@ div#portfoliolist {
   	text-align: right;
 }
 .stop-btm input[type=submit]:hover,.tb-one input[type=submit]:hover{
-  	background: #45b887;
+  	/*background: #45b887;*/
   	border: 2px solid #fff;
   	transition: 0.5s all;
   	-webkit-transition: 0.5s all;
